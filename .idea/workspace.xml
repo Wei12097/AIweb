@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb7c6c8d-3005-49fe-92c0-07a6548adcf6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/myweb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/login/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/login/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/login/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/login/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/login/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/login/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/login/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/myweb/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/myweb/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/myweb/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/myweb/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myweb/myweb/wsgi.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
