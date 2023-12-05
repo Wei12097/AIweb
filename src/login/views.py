@@ -7,3 +7,6 @@ def login(request):
 
 def edit(request):
     return render(request, 'editor.html')
+
+def main_ui(request):
+    return render(request, 'main_ui.html')
