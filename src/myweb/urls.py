@@ -23,4 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('editor/', views.edit),
     path('main/', views.main_ui),
+    path('user/', views.user),
+    path('operate/', views.operate),
+
 ]
