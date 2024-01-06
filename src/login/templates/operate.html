@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+<div class="form-group">
+	<label for="pic">图片</label>
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		<input id="pic" name="pic" type="file" accept=".jpg,.png,.bmp" multiple>
+		<p>
+			<button type="submit" class="btn btn-primary ms-auto">
+				上传
+			</button>
+		</p>
+	</form>
+
+</div>
 
 </body>
 </html>

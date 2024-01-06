@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb7c6c8d-3005-49fe-92c0-07a6548adcf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/login/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/templates/operate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/templates/operate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/templates/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myweb/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myweb/urls.py" afterDir="false" />
@@ -21,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -34,21 +40,23 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2YnF6AOobmIQNWKHeS7p7SJu0wa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/wei/Desktop/src",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wei/Desktop/src&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/login" />
@@ -56,7 +64,28 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.m">
+    <configuration name="m" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/login" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/login/m.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.m" />
         <item itemvalue="Python.urls" />
       </list>
     </recent_temporary>
