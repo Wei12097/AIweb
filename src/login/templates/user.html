@@ -1,10 +1,94 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/1.css' %}">
+
 </head>
 <body>
-<h3>User</h3>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">OCR文本识别阅读器</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+<!--                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                <li><a href="/main">主界面</a></li>
+                <li><a href="/editor">编辑界面</a></li>
+                <li><a href="/operate">识别界面</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/user">个人中心</a></li>
+                <li><a href="/login">退出</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+  // JavaScript 函数用于返回上一页
+  function goBack() {
+    window.history.back();
+  }
+
+  function recordForm(formId) {
+    // 获取整个表单
+    var form = document.getElementById(formId);
+
+    // 使用 FormData 收集表单数据
+    var formData = new FormData(form);
+
+    // 保存数据到 localStorage
+    for (var pair of formData.entries()) {
+      localStorage.setItem(pair[0], pair[1]);
+    }
+
+    alert("数据已修改！");
+  }
+
+  // 恢复上次输入的数据
+  function restoreFormData() {
+    document.getElementsByName("name")[0].value = localStorage.getItem("name") || "";
+    document.getElementsByName("gender")[0].value = localStorage.getItem("gender") || "";
+    document.getElementsByName("birthday")[0].value = localStorage.getItem("birthday") || "";
+    document.getElementsByName("hobby")[0].value = localStorage.getItem("hobby") || "";
+  }
+
+  // 页面加载时恢复数据
+  window.onload = function () {
+    restoreFormData();
+  };
+</script>
+
+<div class="image-container">
+  <img src="/static/img/2.png" alt="Description">
+  <br>
+  <form id="myForm" action="" method="post">
+    昵称：<input type="text" name="name" placeholder="请输入"><br><br>
+    性别：<input type="text" name="gender" placeholder="请输入"><br><br>
+    生日：<input type="text" name="birthday" placeholder="日期"><br><br>
+    爱好：<input type="text" name="hobby" placeholder="请输入"><br><br>
+    <center>
+      <button type="button" onclick="recordForm('myForm')" style="margin: 10px">确认</button>
+    </center>
+  </form>
+
+</div>
+<script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.min.js'%}"></script>
 </body>
 </html>

@@ -1,23 +1,89 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/1.css' %}">
+    <style>
+        .button-green{
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    </style>
 </head>
 <body>
-<div class="form-group">
-	<label for="pic">图片</label>
-	<form method="post" enctype="multipart/form-data">
-		{% csrf_token %}
-		<input id="pic" name="pic" type="file" accept=".jpg,.png,.bmp" multiple>
-		<p>
-			<button type="submit" class="btn btn-primary ms-auto">
-				上传
-			</button>
-		</p>
-	</form>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">OCR文本识别阅读器</a>
+        </div>
 
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                <li><a href="/main">主界面</a></li>
+                <li><a href="/editor">编辑界面</a></li>
+                <li><a href="/operate">识别界面</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/user">个人中心</a></li>
+                <li><a href="/login">退出</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="image-container">
+<label for="pic" style="font-size: 40px">需要识别的图像</label>
+<label for="pic"><img src="/static/img/4.png"></label>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input id="pic" name="pic" type="file" accept=".jpg,.png,.bmp" multiple>
+        <p>
+            <button type="submit" class="button-green">
+                上传
+            </button>
+        </p>
+    </form>
 </div>
+
+<!--<div class="form-group">-->
+<!--	<label for="pic">图片</label>-->
+<!--	<form method="post" enctype="multipart/form-data">-->
+<!--		{% csrf_token %}-->
+<!--		<input id="pic" name="pic" type="file" accept=".jpg,.png,.bmp" multiple>-->
+<!--		<p>-->
+<!--			<button type="submit" class="btn btn-primary ms-auto">-->
+<!--				上传-->
+<!--			</button>-->
+<!--		</p>-->
+<!--	</form>-->
+
+<!--</div>-->
+
+<script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.min.js'%}"></script>
 
 </body>
 </html>

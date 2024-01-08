@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "楷体", "KaiTi", cursive;
+}
+
+.header-container {
+    position: absolute;
+    background-color: #e0e0e0;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+/* 添加一个样式规则来设置返回键的样式 */
+.back-button {
+    position: absolute;
+    text-align: center;
+    margin-top: 22px;
+    padding: 14px;
+    width: 10%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.user-button {
+    position: absolute;
+    text-align: center;
+    margin-top: 22px;
+    padding: 14px;
+    width: 10%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+.button-21 {
+              align-items: center;
+              appearance: none;
+              background-color: #3EB2FD;
+              background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+              background-size: calc(100% + 20px) calc(100% + 20px);
+              border-radius: 100px;
+              border-width: 0;
+              box-shadow: none;
+              box-sizing: border-box;
+              color: #FFFFFF;
+              cursor: pointer;
+              display: inline-flex;
+              font-family: CircularStd,sans-serif;
+              font-size: 1rem;
+              height: auto;
+              justify-content: center;
+              line-height: 1.5;
+              padding: 6px 20px;
+              position: relative;
+              text-align: center;
+              text-decoration: none;
+              transition: background-color .2s,background-position .2s;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+              vertical-align: top;
+              white-space: nowrap;
+            }
+
